@@ -13,7 +13,7 @@ const App = () => {
           lg: `"nav nav" "aside main"`, // for devices greater than 1024px, this basically defines all the ares of our component
         }}
       >
-        <GridItem area="nav" bg={"red"}>
+        <GridItem area="nav" >
           {" "}
           <NavBar></NavBar>
         </GridItem>
