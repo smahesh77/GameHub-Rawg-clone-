@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, GridItem, Show } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       >
         <GridItem area="nav" bg={"red"}>
           {" "}
-          Nav
+          <NavBar></NavBar>
         </GridItem>
          <Show above="lg"> {/*the show will only render the components under it if it is above or below a certain size */}
           <GridItem area="aside" bg={"gold"}>
