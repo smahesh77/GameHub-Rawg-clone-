@@ -1,17 +1,18 @@
 import React from "react";
 import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
+
+  Grid,
+  GridItem,
 } from "@chakra-ui/react";
 
 const App = () => {
   return (
     <div>
-     
+      <Grid templateAreas={`"nav nav" "aside main"`}>
+
+        <GridItem area={'nav'} bg={"red"}> nav</GridItem>
+
+      </Grid>
     </div>
   );
 };
