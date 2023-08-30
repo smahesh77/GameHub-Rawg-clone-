@@ -1,6 +1,7 @@
 import React from "react";
-import { Grid, GridItem, Show } from "@chakra-ui/react";
+import { Center, Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
 
 const App = () => {
   return (
@@ -13,20 +14,24 @@ const App = () => {
           lg: `"nav nav" "aside main"`, // for devices greater than 1024px, this basically defines all the ares of our component
         }}
       >
-        <GridItem area="nav" >
+        <GridItem area="nav">
           {" "}
           <NavBar></NavBar>
         </GridItem>
-         <Show above="lg"> {/*the show will only render the components under it if it is above or below a certain size */}
-          <GridItem area="aside" bg={"gold"}>
+        <Show above="lg">
+          {" "}
+          {/*the show will only render the components under it if it is above or below a certain size */}
+          <GridItem area="aside" >
             {" "}
             Aside
           </GridItem>
         </Show>
 
-        <GridItem area="main" bg={"green"}>
+        <GridItem area="main">
           {" "}
-          Main
+          <Center>
+            <GameGrid />
+          </Center>
         </GridItem>
       </Grid>
     </div>
