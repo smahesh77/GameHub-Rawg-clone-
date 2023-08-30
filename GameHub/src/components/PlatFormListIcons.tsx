@@ -39,7 +39,7 @@ const PlatFormListIcons = ({ platforms }: Props) => {
         <>
             <Icon as={iconMap[p.slug]} color={'gray.500'}>
 
-            </Icon>
+            </Icon>;
         </>
       ))}
     </HStack>
